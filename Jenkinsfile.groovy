@@ -8,6 +8,9 @@ node{
     stage('Second step'){
         sh "echo 'Second step HelloWorld'"
     }
+    stage('Third step'){
+        sh "echo 'Third step HelloWorld'"
+    }
   }
   finally{
     cleanWs()
