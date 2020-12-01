@@ -2,11 +2,11 @@ properties([pipelineTriggers([githubPush()])])
 
 node{
   try{
-    branch=env.BRANCH_NAME
-    build=env.BUILD_NAME
+    branchName=env.BRANCH_NAME
+    buildNum=env.BUILD_NUMBER
 
-    print branch
-    print build
+    print "branchName : " + branchName
+    print "buildNum : " + buildNum
 
     stage('first step'){
 	sh "echo 'First step HelloWorld'"
