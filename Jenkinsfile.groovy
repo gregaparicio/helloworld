@@ -14,7 +14,7 @@ node{
     stage('Second step'){
         sh "echo 'Second step HelloWorld'"
     }
-    stage('Third step'){
+    stage('Third step1'){
         sh "echo 'Third step HelloWorld'"
     }
   }
